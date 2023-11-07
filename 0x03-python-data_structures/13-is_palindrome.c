@@ -16,6 +16,7 @@ void reverse_listint(listint_t **head)
 	{
 		next = now->next;
 		now->next = last;
+		last = now;
 		now = next;
 	}
 
@@ -38,6 +39,11 @@ int is_palindrome(listint_t **head)
 	{
 		fast = fast->next->next;
 		if (!fast)
+		{
+			dup = slag->next;
+			break;
+		}
+		if (!fast->next)
 		{
 			dup = slag->next->next;
 			break;
