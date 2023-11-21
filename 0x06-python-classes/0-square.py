@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-'''Defining class square'''
+# Author: Agaba Twazagye
+'''Defines a class square'''
+
+
 class Square:
     '''placeholder'''
     pass
