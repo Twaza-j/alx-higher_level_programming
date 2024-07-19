@@ -1,6 +1,4 @@
--- a script that lists the number of records with the same score
+-- a script that computes the score average of all records
 -- in the table second_table of the database hbtn_0c_0 in your MySQL server.
-SELECT `score`, COUNT(*) as `number`
-FROM `second_table`
-GROUP BY `score`
-ORDER BY `number` DESC;
+SELECT AVG(`score`) AS `average`
+FROM `second_table`;
